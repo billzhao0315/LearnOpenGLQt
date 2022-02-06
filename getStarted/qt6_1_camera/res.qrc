@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/shaders">
+        <file>shapes.frag</file>
+        <file>shapes.vert</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>image/wall.jpg</file>
+        <file>image/awesomeface.png</file>
+        <file>image/WeChatImage.jpg</file>
+    </qresource>
+</RCC>

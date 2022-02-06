@@ -1,0 +1,13 @@
+#version 330 core
+out vec4 FragColor;
+in vec2 outTextCoord;
+uniform sampler2D textureWall;
+uniform sampler2D textureSmile;
+uniform float ratio;
+void main()
+{
+//FragColor=vec4(outcolor,1.0f);
+    //FragColor=texture2D(textureWall, outTextCoord);
+    FragColor= mix(texture(textureWall, outTextCoord), texture(textureSmile, outTextCoord), ratio);
+    //FragColor=texture(textureSmile, outTextCoord);
+};
